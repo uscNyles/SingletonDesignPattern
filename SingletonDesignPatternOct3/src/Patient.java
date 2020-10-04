@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.ListIterator;
 
+/**
+ * A person with associated allergies
+ * @author nylesgeiger
+ *
+ */
 public class Patient {
 
 	private int id;
