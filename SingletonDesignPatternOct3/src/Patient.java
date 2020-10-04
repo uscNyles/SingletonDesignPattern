@@ -24,15 +24,15 @@ public class Patient {
 		String toReturn = "";
 		Iterator<String> Josh = allergies.iterator();
 		
-		for( String allergy: allergies) {
+		for( String allergy: this.allergies) {
 			if(Josh.hasNext()) {
-			toReturn = allergy + ',';
+			toReturn += allergy + ',';
 			} else {
 			toReturn = allergy;
 			}
 			Josh.next();
 		}
 		
-		return "Patient " + this.id + ": " + this.firstName + " " + this.lastName + "\n" +"  Allergies: " + toReturn;
+		return "Patient " + (this.id+1) + ": " + this.firstName + " " + this.lastName + "\n" +"  Allergies: " + toReturn;
 	}
 }
